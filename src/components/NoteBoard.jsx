@@ -27,16 +27,20 @@ const NoteBoard = () => {
         </form>
       </div>
 
-      <div>
-        {notes.map((note) => (
-          <Note
-            key={note.id}
-            id={note.id}
-            text={note.text}
-            color={note.color}
-            deleteNotes={deleteNotes}
-          />
-        ))}
+      <div className="note-board">
+        {notes.length === 0 ? (
+          <p>Aún no hay notas.</p>
+        ) : (
+          notes.map((note) => (
+            <Note
+              key={note.id}
+              id={note.id}
+              text={note.text}
+              color={note.color}
+              deleteNotes={deleteNotes}
+            />
+          ))
+        )}
       </div>
     </>
   );

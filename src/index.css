@@ -28,6 +28,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  justify-content: center;
 }
 
 h1 {
@@ -52,6 +53,25 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+.note {
+  width: 200px;
+  height: 200px;
+  padding: 16px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: black;
+  font-weight: bold;
+}
+
+.note-board {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 900px;
+  gap: 20px;
 }
 
 @media (prefers-color-scheme: light) {

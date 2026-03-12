@@ -10,9 +10,8 @@ function App() {
       <div className="app-container">
         <h1>🗒️ Sticky Notes</h1>
       </div>
-      <Note />
-      <NoteBoard />
       <ColorSelector />
+      <NoteBoard />
     </ColorProvider>
   );
 }
